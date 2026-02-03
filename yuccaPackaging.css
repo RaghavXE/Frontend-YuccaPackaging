@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face{
+    font-family: Montserrat;
+    src: url("Montserrat.ttf");
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: Montserrat;
+}
+
+
+
+
+nav{
+    height: 60px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.105);
+    position: fixed;
+    /* position: relative; */
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    transition: all ease 0.2s;
+}
+nav:hover{
+    background-color: rgba(255, 255, 255, 0.848);
+}
+nav img{
+    height: 60px;
+}
+nav img:hover{
+    cursor:pointer;
+    /* filter: invert(100%); */
+}
+nav .middle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 13px;
+
+}
+nav .middle p:hover{
+    cursor:pointer;
+    
+}
+nav .middle p h2{
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    bottom: 0;
+    
+
+}
+nav .middle p:hover h2{
+    /* width: 100%; */
+    height: 3px;
+
+
+}
+.right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
+    justify-content:space-between;
+    font-size: 13px;
+
+}
+.right .credit{
+    transition: ease-in 0.2s;
+    transform: translateX(-10px);
+    color: rgb(73, 73, 73);
+}
+.right .credit:hover{
+    cursor:pointer;
+    transform: translateX(0px);
+}
+#buy{
+    height: 20px;
+    width: 20px;
+}
+#person{
+    height: 20px;
+    width: 20px;
+
+}
+button{
+    /* height: 20px; */
+    /* width: 40px; */
+    padding: 12px;
+    display: flex;
+    transform: translateY(2px);
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 5px;
+    /* margin-bottom: 2px; */
+    transition: all ease 0.2s;
+}
+
+button:hover{
+    cursor:pointer;
+    /* background-color: black; */
+    /* filter: invert(100%); */
+    background-color: black;
+    color: white;
+}
+
+
+
+main{
+    height: 100%;
+    width: 100%;
+    /* background-color: beige; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 40px;
+}
+main img{
+    height: 100%;
+    width: 100%;
+}
+.parent_box{
+    height: 80%;
+    width: 70%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    /* background-color: antiquewhite; */
+    margin-top: 5%;
+    margin-left: -15%;
+}
+.txtBox{
+    /* align-items: start; */
+    width: 70%;
+    line-height: 100px;
+    font-size:70px;
+
+
+
+}
+.box{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+.box1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 35%;
+    background-color: rgba(255, 255, 255, 0.300);
+    backdrop-filter: blur(12px);
+    border-radius: 10px;
+    font-size: 25px;
+    position: relative;
+    overflow: hidden;
+}
+.box1 h1{
+    font-size: 25px;
+    font-weight: 400;
+}
+.box1:hover{
+    transition: ease-in 0.2s;
+    background-color: rgb(255, 255, 253);
+    overflow: hidden;
+    /* color: rgb(255, 255, 255); */
+    
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    transition: all ease 0.3s;
+    bottom: -100%;
+    backdrop-filter: blur(0px);
+
+    padding: 18px;
+    /* padding-top: 18px; */
+    font-size: 12px;
+    
+}
+/* .box1T1{
+    overflow: hidden;
+    height: 25px;
+    width: 180px;
+} */
+.box1:hover .overlay{
+    bottom: 0;
+}
+.box1 h2{
+    height: 2px;
+    width: 0px;
+    transition: all ease 1s;
+    background-color: black;
+    margin-top: 20px;
+    bottom: 0;
+    left: 0;
+}
+.box1:hover .overlay h2{
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+.box1:hover .overlay p{
+    margin-top: 5px;
+
+}
+
+
+
+.box2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 35%;
+    background-color: rgba(255, 255, 255, 0.300);
+    backdrop-filter: blur(12px);
+    border-radius: 10px;
+    font-size: 25px;
+    position: relative;
+    overflow: hidden;
+}
+.box2 h1{
+    font-size: 25px;
+    font-weight: 400;
+}
+.box2:hover{
+    transition: ease-in 0.2s;
+    background-color: rgb(255, 255, 253);
+    overflow: hidden;
+    /* color: rgb(255, 255, 255); */
+    
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    transition: all ease 0.3s;
+    bottom: -100%;
+    backdrop-filter: blur(0px);
+
+    padding: 18px;
+    /* padding-top: 18px; */
+    font-size: 12px;
+    
+}
+/* .box1T1{
+    overflow: hidden;
+    height: 25px;
+    width: 180px;
+} */
+.box2:hover .overlay{
+    bottom: 0;
+}
+.box2 h2{
+    height: 2px;
+    width: 0px;
+    transition: all ease 1s;
+    background-color: black;
+    margin-top: 20px;
+    bottom: 0;
+    left: 0;
+}
+.box2:hover .overlay h2{
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+.box2:hover .overlay p{
+    margin-top: 5px;
+
+}
+
+
+
+
+
+
+
+
+.box3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 35%;
+    background-color: rgba(255, 255, 255, 0.300);
+    backdrop-filter: blur(12px);
+    border-radius: 10px;
+    font-size: 25px;
+    position: relative;
+    overflow: hidden;
+}
+.box3 h1{
+    font-size: 25px;
+    font-weight: 400;
+}
+.box3:hover{
+    transition: ease-in 0.2s;
+    background-color: rgb(255, 255, 253);
+    overflow: hidden;
+    /* color: rgb(255, 255, 255); */
+    
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    transition: all ease 0.3s;
+    bottom: -100%;
+    backdrop-filter: blur(0px);
+
+    padding: 18px;
+    /* padding-top: 18px; */
+    font-size: 12px;
+    
+}
+/* .box1T1{
+    overflow: hidden;
+    height: 25px;
+    width: 180px;
+} */
+.box3:hover .overlay{
+    bottom: 0;
+}
+.box3 h2{
+    height: 2px;
+    width: 0px;
+    transition: all ease 1s;
+    background-color: black;
+    margin-top: 20px;
+    /* bottom: 0; */
+    /* left: 0; */
+}
+.box3:hover .overlay h2{
+    width: 100%;
+    /* bottom: 0; */
+    /* left: 0; */
+}
+.box3:hover .overlay p{
+    margin-top: 5px;
+
+}
