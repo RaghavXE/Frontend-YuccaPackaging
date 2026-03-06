@@ -709,7 +709,7 @@ main img{
     width: 50%;
     align-items:start;
     justify-content:center;
-    padding: 20px;
+    padding: 50px;
     gap: 10px;
 }
 
@@ -748,7 +748,7 @@ main img{
 .commit-mid-left{
     height: 100%;
     width: 50%;
-    margin-left: 20px;
+    margin-left: 100px;
     background-color: #FFFDF5;
     font-size: 16px;
     display: flex;
@@ -782,7 +782,7 @@ main img{
 .commit-down-left{
     height: 100%;
     width: 50%;
-    margin-left: 20px;
+    margin-left: 100px;
     background-color: #FFFDF5;
     font-size: 16px;
     display: flex;
@@ -967,6 +967,207 @@ main img{
     font-size: 11px;
 }
 
+
+.custom-solutions{
+    height: 40%;
+    width: 100%;
+    background-color: #12271D;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+.custom-solutions-up{
+    width: 90%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.csu-left{
+    height: 75%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.csu-left p:nth-child(1){
+    font-size: 10px;
+    color: #FEFEFE;
+}
+.csu-left p:nth-child(2){
+    margin-top: 10px;
+    font-size: 25px;
+    color: #FEFEFE;
+}
+.csu-right{
+    height: 150%;
+    
+    /* background-color: aquamarine; */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.csu-right img{
+    height: 100%;
+    /* width: 100%; */
+    object-fit: cover;
+}
+
+.custom-solutions-down{
+    height: 25%;
+    width: 100%;
+    /* background-color: aqua; */
+    border-top: 1px solid #FEFEFE;
+    border-bottom: 1px solid #FEFEFE;
+    display: flex;
+    color: white;
+    /* align-items: center; */
+    /* justify-content: center; */
+    font-size: 20px;
+    /* animation: mark 10s linear infinite; */
+    overflow: hidden;
+}
+.moving-line{
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    animation: mov 40s linear infinite;
+    
+}
+.moving-line p{
+    flex-shrink: 0;
+}
+@keyframes mov {
+    0% { 
+        transform: translateX(0); 
+    }
+    100% { 
+        transform: translateX(-150%); 
+    }
+}
+
+
+.fp-standards{
+    height: 70%;
+    width: 100%;
+    background-color: #FFFDF5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fps-cont{
+    height: 85%;
+    width: 88%;
+    display: flex;
+    flex-direction: row;
+    /* gap: 10px; */
+    justify-content: space-between;
+}
+.fp-left{
+    height: 100%;
+    width: 48%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.fp-left-up{
+    font-size: 22px;
+}
+.fp-left-down{
+
+}
+.fp-div{
+    /* background-color: aqua; */
+    border-bottom: 1px #DFDAC6 solid;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.sml-sq{
+    height: 6px;
+    width: 6px;
+    background-color: black;
+    border-radius: 2px;
+}
+.fp-div p{
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: 10px;
+}
+.fp-right{
+    height: 100%;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.fp-right-up{
+    font-size: 8px;
+}
+
+.faq{
+    height: 48%;
+    width: 100%;
+    background-color: #F7F4E9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faq-cont{
+    height: 80%;
+    width: 85%;
+    display: flex;
+    gap: 3%;
+    align-items: center;
+}
+.faq-left{
+    height: 100%;
+    width: 48%;
+    /* background-color: #FFFDF5; */
+}
+.faq-left-up{
+    width: 50%;
+    /* height: 30%; */
+    /* background-color: #ffd940; */
+}
+.faq-left-up p{
+    font-size: 18px;
+}
+.faq-left-down{
+    height: 20px;
+    width: 60px;
+    background-color: black;
+    border-radius: 3px;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+.faq-right{
+    height: 100%;
+    width: 48%;
+    /* background-color: #FFFDF5; */
+
+}
+.faq-div{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    border-top: 1px #A09E97 solid;
+    justify-content: space-between;
+}
+.faq-div p:nth-child(2){
+    font-size: 20px;
+}
 .site-bottom{
     height: 70%;
     width: 100%;
@@ -1048,6 +1249,77 @@ main img{
     justify-content: center;
     align-items: center;
     font-size: 18px;
+    transition: all ease 0.5s;
+}
+.grid-card p{
+    position: absolute;
+}
+#gc-food-service{
+    transition: all ease 0.5s;
+
+}
+
+#gc-food-service:hover{
+    border-radius: 30%;
+    border: none;
+    background-size: cover;
+    background-image: url(https://yucca.co.za/wp-content/uploads/2025/09/service.jpg);
+    color: white;
+    background-repeat: no-repeat;
+    
+}
+/* .gc-food-service-img{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    display: hidden;
+    position: relative;
+    transition: all ease 0.5s;
+}
+.gc-food-service-img:hover{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.189);
+    border-radius: 30%;
+} */
+
+#gc-food-pro{
+    transition: all ease 0.5s;
+
+}
+.gc-food-pro-img{
+    display: none;
+    overflow: hidden;
+}
+
+#gc-food-pro:hover{
+    border-radius: 30%;
+    /* background-color: rgba(255, 255, 255, 0); */
+    border: none;
+    background-size: cover;
+    background-image: url(https://yucca.co.za/wp-content/uploads/2025/09/processing.jpg);
+    color: white;
+    background-repeat: no-repeat;
+    
+}
+#gc-agri{
+    /* background-color: #DFDAC6; */
+    transition: all ease 0.5s;
+
+}
+.gc-agri-img{
+    display: none;
+    overflow: hidden;
+}
+
+#gc-agri:hover{
+    border-radius: 30%;
+    /* background-color: rgba(255, 255, 255, 0); */
+    border: none;
+    background-size: cover;
+    background-image: url(https://yucca.co.za/wp-content/uploads/2025/09/Agriculture.jpg);
+    color: white;
+    background-repeat: no-repeat;
+    
 }
 .site-bottom-lower-footer{
     height: 100px;
