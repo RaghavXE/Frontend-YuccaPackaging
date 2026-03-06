@@ -9,7 +9,7 @@
 }
 @font-face {
     font-family: magnet;
-    src: url(/yucca/Magnetik-Light.otf);
+    src: url(Magnetik-Light.otf);
 }
 html, body {
   width: 100%;
@@ -1773,3 +1773,4 @@ main img{
         opacity: 1;
     }
 } */
+
